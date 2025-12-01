@@ -1,0 +1,25 @@
+from IPython.display import HTML
+
+HTML("""
+<div style='position:fixed; right:0; top:0; width:350px; height:100%; background:#111; color:#fff; padding:15px; overflow:auto; z-index:9999;'>
+  <h3>💬 LLM Copilot</h3>
+  
+  <textarea id='prompt' style='width:100%; height:120px;'></textarea>
+  <button onclick='sendPrompt()' style='margin-top:10px;'>Enviar</button>
+
+  <pre id='result' style='white-space:pre-wrap; margin-top:10px;'></pre>
+</div>
+
+<script>
+function sendPrompt() {
+  let message = document.getElementById("prompt").value;
+  fetch("http://127.0.0.1:8000/generate", {
+    method:"POST",
+    headers:{ "Content-Type":"application/json" },
+    body:JSON.stringify({message:message})
+  })
+  .then(r => r.json())
+  .then(d => document.getElementById("result").innerText = d.response);
+}
+</script>
+""")
