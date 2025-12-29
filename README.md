@@ -36,5 +36,3 @@ Jupyter Copilot es un asistente LLM local para Jupyter Notebook, desarrollado co
 ## ✨ Autor
 
 Creado por **Tomas Zapani**.  
-
-## 📝 Licencia
