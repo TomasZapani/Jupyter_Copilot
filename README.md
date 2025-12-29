@@ -9,6 +9,9 @@ Jupyter Copilot es un asistente LLM local para Jupyter Notebook, desarrollado co
 - **Backend**: Python + FastAPI  
 - **Frontend**: HTML  
 - **Integración**: Jupyter Notebook  
+## 📷 Captura
+
+![Jupyter Copilot en acción](image1)
 
 ## ⚙️ Instalación
 
