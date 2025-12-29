@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV '/media/tomas_elz/Nuevo vol/JN_IA/venv'
+set -gx VIRTUAL_ENV /media/tomas/vol/Jupyter_Copilot/venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
